@@ -45,19 +45,9 @@ else:
 
 
 
-#     2.     Take 10 integers from keyboard using loop and print their average value on the screen Print the following patterns using loop : 
-#    * 
-#    ** 
-#    *** 
-#    **** 
+#     2.     Take 10 integers from keyboard using loop and print their average value on the screen. 
 
-def star(n):
-	for i in range (0,n):
-		for j in range(0,i+1):
-			print("*",end=" ")
-		print("\r")
-n=4
-star(n)
+# METHOD_1 :
 
 n=input("enter any numbers:")
 num=n.split()
@@ -70,11 +60,50 @@ print("sum of numbers",sum)
 avg=sum/len(num)
 print(avg)
 
+# METHOD_2 :
+	
+sum = 0
+i = 0
+while i>0 :
+	print("Enter number :")
+	num = input()
+	sum = sum + num
+	i = i -1
+print("Average is : ",sum/10.0)
+	
+	
+
+
+
+#      3.     Print the following patterns using loop : 
+
+#    * 
+#    ** 
+#    *** 
+#    **** 
+
+# METHOD_1 :
+	
+i  = 1
+while i <= 4 :
+	print("*" * i)
+	i = i+1	
+
+# METHOD_2 :
+
+def star(n):
+	for i in range (0,n):
+		for j in range(0,i+1):
+			print("*",end=" ")
+		print("\r")
+n=4
+star(n)
 
 
 
 
-#     3.     Write a program to find the length of the string "refrigerator" without using len( ) function...
+
+#     4.     Write a program to find the length of the string "refrigerator" without using len( ) function...
 
 a = "refrigerator"
 count = 0
@@ -86,7 +115,7 @@ print(count)
 
 
 
-#     4.     Write a Python program to count the number of characters (character frequency) in a string...
+#     5.     Write a Python program to count the number of characters (character frequency) in a string...
 
 # METHOD_1 :
 
@@ -117,7 +146,7 @@ str(freq))
 
 
 
-#     5.    Write a Python script that takes input from the user and displays that input back in upper and lower cases...
+#     6.    Write a Python script that takes input from the user and displays that input back in upper and lower cases...
 
 # METHOD_1 :
 
@@ -135,7 +164,7 @@ print("The Father of Python is : ",user_input.lower())
 
 
 
-#     6.     Write a Python program to count occurrences of a substring in a string...
+#     7.     Write a Python program to count occurrences of a substring in a string...
 
 # METHOD_1 :
 
